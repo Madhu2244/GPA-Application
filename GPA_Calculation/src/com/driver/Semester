@@ -1,0 +1,78 @@
+package com.driver;
+
+public class Semester {
+
+	public static double one(double n1, double n2) 
+	{
+	    double combined = (n1*.4 + n2*.4);
+	    if ((96.5-combined) <0)
+	        return 0;
+	    return (5*(96-combined) +2.5);
+	}
+	public static double two(double n1, double n2) 
+	{
+	    double combined = (n1*.4 + n2*.4);
+	    if ((92.5-combined) <0)
+	        return 0;
+	    return (5*(92.5-combined));
+	}
+	public static double three(double n1, double n2) 
+	{
+	    double combined = (n1*.4 + n2*.4);
+	    if ((89.5-combined) <0)
+	        return 0;
+	    return (5*(89.5-combined));
+	}
+	public static double four(double n1, double n2) 
+	{
+	    double combined = (n1*.4 + n2*.4);
+	    if ((86.5-combined) <0)
+	        return 0;
+	    return (5*(86.5-combined));
+	}
+	public static double five(double n1, double n2) 
+	{
+	    double combined = (n1*.4 + n2*.4);
+	    if ((82.5-combined) <0)
+	        return 0;
+	    return (5*(82.5-combined));
+	}
+	public static double six(double n1, double n2) 
+	{
+	    double combined = (n1*.4 + n2*.4);
+	    if ((79.5-combined) <0)
+	        return 0;
+	    return (5*(79.5-combined));
+	}
+	public static double seven(double n1, double n2) 
+	{
+	    double combined = (n1*.4 + n2*.4);
+	    if ((77.5-combined) <0)
+	        return 0;
+	    return (5*(77.5-combined));
+	}
+	public static double eight(double n1, double n2) 
+	{
+	    double combined = (n1*.4 + n2*.4);
+	    if ((72.5-combined) <0)
+	        return 0;
+	    return (5*(72.5-combined));
+	}
+	public static double ten(double n1, double n2) 
+	{
+	    double combined = (n1*.4 + n2*.4);
+	    if ((69.5-combined) <0)
+	        return 0;
+	    return (5*(69.5-combined));
+	}
+	
+	public static double nine(double n1, double n2) 
+	{
+	    double combined = (n1*.4 + n2*.4);
+	    if ((70.5-combined) <0)
+	        return 0;
+	    return (5*(70.5-combined));
+	}
+
+
+}
