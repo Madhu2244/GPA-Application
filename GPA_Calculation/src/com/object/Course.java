@@ -1,5 +1,5 @@
 package com.object;
-
+// Made by Madhu and Reza
 public class Course {
 	private String name;
 	private String type;
