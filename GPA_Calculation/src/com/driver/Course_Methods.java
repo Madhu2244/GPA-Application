@@ -125,5 +125,22 @@ public class Course_Methods {
 		return myCourseListy;
 	}
 	
+	public static String toStringCourses (CourseList myCourseList) {
+		myCourseList.sortGradeLevel();
+		String line = "Class\tType\tGrade\tSem\tGrade\tPeriod\n";
+		String output = formattedToString(myCourseList);
+		return (line + output);
+	}
+	
+	public static String formattedToString (CourseList myCourseList) {
+		String output = "";
+		for (int i = 0; i < myCourseList.getLength(); i++) {
+			if (i != myCourseList.getLength()-1)
+				output += myCourseList.getCourseFromI(i).formattedToString() + "\n";
+			else
+				output += myCourseList.getCourseFromI(i).formattedToString();
+		}
+		return output;
+	}
 	
 }
