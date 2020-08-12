@@ -117,6 +117,31 @@ public class CourseList {
 					courseList.set(i, temp);
 				}
 	}
-	
+	public void sortMultiple() {
+		for (int i = 0; i < courseList.size(); i++)
+		{
+			for (int j = 0; j < courseList.size()-1; j++)
+			{
+				if (courseList.get(j).compareGradeLevel(courseList.get(i)) > 0)
+				{
+					Course temp = courseList.get(j);
+					courseList.set(j, courseList.get(i));
+					courseList.set(i, temp);
+				}
+				if (courseList.get(j).compareSemester(courseList.get(i)) > 0)
+				{
+					Course temp = courseList.get(j);
+					courseList.set(j, courseList.get(i));
+					courseList.set(i, temp);
+				}
+				if (courseList.get(j).comparePeriod(courseList.get(i)) > 0)
+				{
+					Course temp = courseList.get(j);
+					courseList.set(j, courseList.get(i));
+					courseList.set(i, temp);
+				}
+			}
+		}
+	}
 }
 
