@@ -126,7 +126,7 @@ public class Course_Methods {
 	}
 	
 	public static String toStringCourses (CourseList myCourseList) {
-		myCourseList.sortGradeLevel();
+		myCourseList.sortMultiple();
 		String line = "Class\tType\tGrade\tSem\tGrade\tPeriod\n";
 		String output = formattedToString(myCourseList);
 		return (line + output);
