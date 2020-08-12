@@ -31,6 +31,15 @@ public class CourseList {
 		return output;
 	}	
 	
+	public int getLength ()
+	{
+		return courseList.size();
+	}
+	
+	public Course getCourseFromI(int i) {
+		return courseList.get(i);
+	}
+	
 	public double calculateTotalGPA() {
 		double output = 0.0;
 		for (int i = 0; i < courseList.size(); i++)
@@ -54,4 +63,60 @@ public class CourseList {
 		return output / courseList.size();
 	}
 	
+	public void sortName() {
+		for (int i = 0; i < courseList.size(); i++)
+			for (int j = 0; j < courseList.size()-1; j++)
+				if (courseList.get(j).compareName(courseList.get(i)) > 0)
+				{
+					Course temp = courseList.get(j);
+					courseList.set(j, courseList.get(i));
+					courseList.set(i, temp);
+				}
+	}
+	
+	public void sortType() {
+		for (int i = 0; i < courseList.size(); i++)
+			for (int j = 0; j < courseList.size()-1; j++)
+				if (courseList.get(j).compareType(courseList.get(i)) > 0)
+				{
+					Course temp = courseList.get(j);
+					courseList.set(j, courseList.get(i));
+					courseList.set(i, temp);
+				}
+	}
+
+	public void sortSemester() {
+		for (int i = 0; i < courseList.size(); i++)
+			for (int j = 0; j < courseList.size()-1; j++)
+				if (courseList.get(j).compareSemester(courseList.get(i)) > 0)
+				{
+					Course temp = courseList.get(j);
+					courseList.set(j, courseList.get(i));
+					courseList.set(i, temp);
+				}
+	}
+	
+	public void sortGradeLevel() {
+		for (int i = 0; i < courseList.size(); i++)
+			for (int j = 0; j < courseList.size()-1; j++)
+				if (courseList.get(j).compareGradeLevel(courseList.get(i)) > 0)
+				{
+					Course temp = courseList.get(j);
+					courseList.set(j, courseList.get(i));
+					courseList.set(i, temp);
+				}
+	}
+	
+	public void sortPeriod() {
+		for (int i = 0; i < courseList.size(); i++)
+			for (int j = 0; j < courseList.size()-1; j++)
+				if (courseList.get(j).comparePeriod(courseList.get(i)) > 0)
+				{
+					Course temp = courseList.get(j);
+					courseList.set(j, courseList.get(i));
+					courseList.set(i, temp);
+				}
+	}
+	
 }
+
