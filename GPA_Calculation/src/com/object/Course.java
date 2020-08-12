@@ -104,5 +104,37 @@ public class Course {
 				+ "," + gradeLevel + "," + period;
 	}
 	
+	public String formattedToString () {
+		return  name + "\t" + type + "\t" + grade + "\t" + semester
+				+ "\t" + gradeLevel + "\t" + period;
+	}
+	public double compareGrade(Object o) {
+		Course other = (Course) o;
+		return this.grade - other.grade;
+	}
 	
+	public int compareName(Object o) {
+		Course other = (Course) o;
+		return this.name.compareTo(other.name);
+	}
+	
+	public int compareType(Object o) {
+		Course other = (Course) o;
+		return this.type.compareTo(other.type);
+	}
+	
+	public int compareSemester(Object o) {
+		Course other = (Course) o;
+		return this.semester - other.semester;
+	}
+	
+	public int compareGradeLevel(Object o) {
+		Course other = (Course) o;
+		return this.gradeLevel - other.gradeLevel;
+	}
+	
+	public int comparePeriod(Object o) {
+		Course other = (Course) o;
+		return this.period - other.period;
+	}
 }
